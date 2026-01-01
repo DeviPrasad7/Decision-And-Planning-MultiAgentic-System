@@ -1,0 +1,11 @@
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langchain-tavily
+litellm
+python-dotenv
+pydantic
+duckduckgo-search
+tavily-python
+requests
