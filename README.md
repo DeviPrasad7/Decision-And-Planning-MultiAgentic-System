@@ -77,18 +77,40 @@ pip install -r requirements.txt
 cd app && python main.py
 ```
 
-> **Note:** Ensure you have your `.env` file configured with `GEMINI_KEY_1` and `GROQ_API_KEY` before running.
+> **Note:** Ensure you have your `.env` file configured with `GEMINI_KEY_1` , `GROQ_API_KEY` and `TAVILY_API_KEY` before running.
+> 
+>  (all are free of cost and do not require any credit card details, only google account is enough, do not encourage false websites, i will also add the original links below to get the api keys).
+>
+> https://aistudio.google.com/api-keys   --> gemini api key
+> 
+> https://console.groq.com/keys  --> groq api key
+> 
+> https://app.tavily.com/home --> tavily api key
 
 ---
+
+## 💡 Cost & Resource Strategy (Free-Tier Optimized)
+
+This project is intentionally engineered to operate at **zero infrastructure cost**, leveraging **free-tier models** and resources exclusively during the Alpha phase. To achieve reliability, throughput, and fault tolerance under free-tier constraints, the system employs a **multi-key load-balancing** strategy.
+
+**Multiple API keys**—provisioned across separate Google accounts—are rotated and dynamically balanced to distribute request load, mitigate rate limits, and maintain uninterrupted service availability. This approach enables real-world stress testing of agentic orchestration, routing logic, and failover behavior without incurring any paid usage, while closely simulating production-scale traffic patterns.
+
+This design choice reinforces the project’s goals of:
+
+* Cost-efficiency by design
+
+* Resilience under constrained resources
+
+* Realistic LLMOps experimentation without financial overhead
 
 ## 🔮 Roadmap & Future Evolution
 
 This project is currently in **Alpha Phase**. The monolithic core is being actively decoupled into a scalable microservices architecture.
 
-* **🌐 API Exposure (FastAPI):** Transitioning `main.py` into a high-concurrency RESTful API to serve as a backend for web and mobile clients.
+* **🌐 API Exposure (FastAPI):** Transitioning project into a high-concurrency RESTful API to serve as a backend for web and mobile clients.
 * **☁️ Cloud Native (GCP):** Containerization (Docker) and deployment to Google Cloud Run for serverless auto-scaling and high availability.
 * **🖥️ Real-Time Interface (React):** Developing a "Glass Box" UI to visualize the agent's "Thinking Process" (Plan → Execute → Refine) in real time.
-* **📚 Long-Term Memory (RAG):** Integration with Vector Databases (Pinecone / Weaviate) to persist user context beyond the current session.
+* **📚 Long-Term Memory (RAG):** Integration with Vector Databases (Pinecone / Faiss) to persist user context beyond the current session.
 
 ---
 
