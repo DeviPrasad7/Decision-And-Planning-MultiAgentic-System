@@ -1,10 +1,4 @@
 # 🧠 Hybrid Sandwich Agent: Multi-Tiered Cognitive Architecture
-
-![Status](https://img.shields.io/badge/Status-Under_Development-orange?style=for-the-badge\&logo=statuspage)
-![Architecture](https://img.shields.io/badge/Architecture-Hybrid_Sandwich_Pattern-purple?style=for-the-badge\&logo=moleculer)
-![Latency](https://img.shields.io/badge/Latency_Target-0.75s_--_15s-success?style=for-the-badge\&logo=speedtest)
-![Stack](https://img.shields.io/badge/Tech_Stack-LangChain_|_LiteLLM_|_GoogleAI_|_Groq-blue?style=for-the-badge\&logo=python)
-
 ---
 
 ## ⚡ Executive Summary
@@ -57,7 +51,7 @@ pip install -r requirements.txt
 
 # 3. Enter Application Directory and Launch
 cd app
-chainlit run app.py -w
+python main.py
 ```
 
 ---
@@ -74,7 +68,7 @@ python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 
 # 3. Enter Application Directory and Launch
-cd app && chainlit run app.py -w
+cd app && python main.py
 ```
 
 > **Note:** Ensure you have your `.env` file configured with `GEMINI_KEY_1` , `GROQ_API_KEY` and `TAVILY_API_KEY` before running.

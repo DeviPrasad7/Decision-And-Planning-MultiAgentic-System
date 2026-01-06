@@ -3,3 +3,5 @@ venv/
 .vscode/
 .gitattributes
 __pycache__/
+.chainlit
+.files
