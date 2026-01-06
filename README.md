@@ -2,7 +2,7 @@
 
 ![Status](https://img.shields.io/badge/Status-Under_Development-orange?style=for-the-badge\&logo=statuspage)
 ![Architecture](https://img.shields.io/badge/Architecture-Hybrid_Sandwich_Pattern-purple?style=for-the-badge\&logo=moleculer)
-![Latency](https://img.shields.io/badge/Latency_Target-0.75s_--_15s-success?style=for-the-badge\&logo=speedtest)
+![Latency](https://img.shields.io/badge/Latency_Target-0.75s_--_35s-success?style=for-the-badge\&logo=speedtest)
 ![Stack](https://img.shields.io/badge/Tech_Stack-LangChain_|_LiteLLM_|_GoogleAI_|_Groq-blue?style=for-the-badge\&logo=python)
 
 ---
