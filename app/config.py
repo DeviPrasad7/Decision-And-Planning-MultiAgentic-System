@@ -6,7 +6,7 @@ load_dotenv()
 
 class Config:
     GEMINI_KEYS = [val for key, val in os.environ.items() if key.startswith("GEMINI_KEY_") and val]
-    GROQ_KEY = os.getenv("GROQ_API_KEY")
+    GROQ_KEYS = [val for key, val in os.environ.items() if key.startswith("GROQ_KEY_") and val]
     SMART_MODELS = [
         "gemini/gemini-2.5-flash",
         "gemini/gemini-2.5-flash-lite",

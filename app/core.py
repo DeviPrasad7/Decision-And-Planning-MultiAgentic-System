@@ -25,19 +25,20 @@ def init_router():
                 }
             })
 
-    if Config.GROQ_KEY:
-        for model in Config.FAST_MODELS:
-            model_list.append({
-                "model_name": "fast-tier",
-                "litellm_params": {
-                    "model": model,
-                    "api_key": Config.GROQ_KEY,
-                    "temperature": 0.1,
-                    "top_p": 0.1,
-                    "order": 1
-                }
-            })
-    
+    if Config.GROQ_KEYS:
+        for key in Config.GROQ_KEYS:
+            for model in Config.FAST_MODELS:
+                model_list.append({
+                    "model_name": "fast-tier",
+                    "litellm_params": {
+                        "model": model,
+                        "api_key": key,
+                        "temperature": 0.1,
+                        "top_p": 0.1,
+                        "order": 1
+                    }
+                })
+        
     for key in Config.GEMINI_KEYS:
         model_list.append({
             "model_name": "fast-tier",

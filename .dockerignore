@@ -1,0 +1,20 @@
+# Git
+.git
+.gitignore
+
+# VSCode
+.vscode
+
+# Python
+venv
+.venv
+*.pyc
+__pycache__/
+
+# Environment
+.env
+.env.example
+
+# Docker
+Dockerfile
+.dockerignore
