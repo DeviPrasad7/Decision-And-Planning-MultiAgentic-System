@@ -10,4 +10,6 @@ COPY app/ /app/app/
 
 WORKDIR /app/app
 
-CMD ["python", "main.py"]
+EXPOSE 8000
+
+CMD ["chainlit", "run", "app.py", "-w", "--host", "0.0.0.0", "--port", "8000"]
