@@ -10,6 +10,6 @@ COPY app/ /app/app/
 
 WORKDIR /app/app
 
-EXPOSE 8000
+EXPOSE 8080
 
-CMD ["chainlit", "run", "app.py", "-w", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["chainlit", "run", "app.py", "--host", "0.0.0.0", "--port", "8080"]

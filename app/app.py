@@ -175,7 +175,7 @@ async def start():
     
     realtime_info = get_realtime_info()
     
-    await cl.Message(content="# Sandwich Agent\n*System Online. Ready for queries.*").send()
+    await cl.Message(content="#  Sandwich Agent\n*System Online. Ready for queries.*").send()
     
     side_info = cl.Text(name="Mission Control", content=realtime_info, display="side")
     await cl.Message(content="", elements=[side_info]).send()

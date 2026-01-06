@@ -6,7 +6,6 @@ langchain-tavily==0.2.16
 litellm==1.80.11
 python-dotenv==1.2.1
 pydantic==2.12.5
-duckduckgo-search==8.1.1
 tavily-python==0.7.17
 requests==2.32.5
 chainlit==2.9.4

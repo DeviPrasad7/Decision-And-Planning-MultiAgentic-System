@@ -1,9 +1,15 @@
 # 🧠 Hybrid Sandwich Agent: Multi-Tiered Cognitive Architecture
+
+![Status](https://img.shields.io/badge/Status-Under_Development-orange?style=for-the-badge\&logo=statuspage)
+![Architecture](https://img.shields.io/badge/Architecture-Hybrid_Sandwich_Pattern-purple?style=for-the-badge\&logo=moleculer)
+![Latency](https://img.shields.io/badge/Latency_Target-0.75s_--_35s-success?style=for-the-badge\&logo=speedtest)
+![Stack](https://img.shields.io/badge/Tech_Stack-LangChain_|_LiteLLM_|_GoogleAI_|_Groq-blue?style=for-the-badge\&logo=python)
+
 ---
 
 ## ⚡ Executive Summary
 
-The **Hybrid Sandwich Agent** is a high-performance, multi-agentic system engineered to solve the **Latency-Accuracy Tradeoff** in Generative AI. By leveraging a **Cost-Based Routing Swarm**, the system dynamically orchestrates requests between ultra-low latency "Fast Tier" models and high-reasoning "Smart Tier" models.
+The **Hybrid Sandwich Agent** is a high-performance, multi-agentic system engineered to solve the **Latency-Accuracy Tradeoff** in Generative AI. By leveraging a **Cost-Based Routing Swarm**, the system dynamically orchestrates requests between ultra-low latency "Fast Tier" models and high-reasoning "Smart Tier" models. Hosted on Google cloud run , allowing high serverless scalability and robust performance.
 
 This architecture implements a robust **Sandwich Pattern** (Plan → Execute → Refine), enabling complex Chain-of-Thought (CoT) reasoning for strategic tasks while maintaining **sub-second response times** for direct interaction.
 
@@ -51,7 +57,7 @@ pip install -r requirements.txt
 
 # 3. Enter Application Directory and Launch
 cd app
-python main.py
+chainlit run app.py -w
 ```
 
 ---
@@ -68,7 +74,7 @@ python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 
 # 3. Enter Application Directory and Launch
-cd app && python main.py
+cd app && chainlit run app.py -w
 ```
 
 > **Note:** Ensure you have your `.env` file configured with `GEMINI_KEY_1` , `GROQ_API_KEY` and `TAVILY_API_KEY` before running.
@@ -96,17 +102,6 @@ This design choice reinforces the project’s goals of:
 * Resilience under constrained resources
 
 * Realistic LLMOps experimentation without financial overhead
-
-## 🔮 Roadmap & Future Evolution
-
-This project is currently in **Alpha Phase**. The monolithic core is being actively decoupled into a scalable microservices architecture.
-
-* **🌐 API Exposure (FastAPI):** Transitioning project into a high-concurrency RESTful API to serve as a backend for web and mobile clients.
-* **☁️ Cloud Native (GCP):** Containerization (Docker) and deployment to Google Cloud Run for serverless auto-scaling and high availability.
-* **🖥️ Real-Time Interface (React):** Developing a "Glass Box" UI to visualize the agent's "Thinking Process" (Plan → Execute → Refine) in real time.
-* **📚 Long-Term Memory (RAG):** Integration with Vector Databases (Pinecone / Faiss) to persist user context beyond the current session.
-
----
 
 ## 👨‍💻 Engineering Standards
 
