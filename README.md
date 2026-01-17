@@ -13,6 +13,7 @@ The **Hybrid Sandwich Agent** is a high-performance, multi-agentic system engine
 
 This architecture implements a robust **Sandwich Pattern** (Plan → Execute → Refine), enabling complex Chain-of-Thought (CoT) reasoning for strategic tasks while maintaining **sub-second response times** for direct interaction.
 
+Hosted link :- https://huggingface.co/spaces/DspTheGreat/Sandwich_Agent
 ---
 
 ### 🚀 Performance Metrics
